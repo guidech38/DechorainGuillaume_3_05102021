@@ -1,0 +1,461 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/*  TYPOGRAPHY  */
+h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  margin: 20px 0 auto;
+}
+
+h2 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4, p {
+  margin: 0;
+}
+
+/*  HEADER  */
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*  HEADER - Bouton retour  */
+header .icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #000;
+}
+
+/*  FOOTER  */
+footer {
+  position: relative;
+  padding: 30px;
+  color: #ffffff;
+  background-color: #2c2c2c;
+}
+footer .footer-link {
+  padding-left: 0;
+  list-style-type: none;
+  line-height: 25px;
+  cursor: default;
+}
+footer .footer-link .item .icon {
+  margin-right: 20px;
+}
+footer .footer-link .item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo {
+  width: 100px;
+  filter: invert(100%);
+}
+
+/*  MAIN  */
+main {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background-color: whitesmoke;
+}
+
+/*  MAIN ACCUEIL  */
+/*  MAIN ACCUEIL - section concept  */
+.concept {
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.location {
+  background-color: #f0f0f0;
+}
+
+.location .icon {
+  padding: 15px 15px 15px 0;
+}
+
+.concept-title {
+  padding: 0 40px;
+}
+
+.concept-description {
+  padding: 0 30px;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+/*  MAIN ACCUEIL - section process  */
+.process {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.actions-list {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  list-style-type: none;
+  padding: 0;
+}
+
+.actions-list .item {
+  position: relative;
+  padding: 1em 0.7em;
+  padding: 20px 13px 0 13px;
+  margin: 20px 10px;
+  height: 50px;
+  text-align: left;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px gainsboro;
+  -webkit-box-shadow: 0px 5px 10px 0px gainsboro;
+}
+
+.actions-list .item:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+  cursor: default;
+}
+
+.actions-list .item:hover .icon {
+  color: #9356DC;
+}
+
+.actions-list .icon {
+  margin: 0 25px;
+  font-size: 20px;
+  color: #646464;
+}
+
+.step {
+  position: absolute;
+  left: -10px;
+  padding-top: 2px;
+  width: 23px;
+  height: 20px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #9356DC;
+}
+
+/*  MAIN ACCUEIL - section restaurants  */
+.restaurants {
+  padding: 15px;
+  background-color: whitesmoke;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  height: 250px;
+}
+
+.menu {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px gainsboro;
+  background-color: #fff;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-titre {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px 0;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+}
+
+/*  MAIN ACCUEIL - Promo  */
+.promo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  padding: 15px;
+  color: #0c6b50;
+  background: #99E2D0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/*  MAIN PAGES  */
+/*  MAIN PAGES - section intro  */
+.photopage {
+  position: relative;
+  width: 100%;
+}
+
+.intro {
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.titreintro {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 40px 40px 0 0;
+}
+
+/*  MAIN PAGES - section menupages  */
+.title-underline {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+
+.menupage {
+  position: relative;
+  margin: 0px 15px 30px 15px;
+}
+
+/*  ANIMATION - loader  */
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.loader-side {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 200px auto;
+  border-radius: 60px;
+  border-top: 4px solid #9356DC;
+  border-right: 4px solid rgba(91, 25, 93, 0.4);
+  border-bottom: 4px solid #9356DC;
+  border-left: 4px solid rgba(91, 25, 93, 0.4);
+  animation-name: spin;
+  -webkit-animation-name: spin;
+  animation-duration: 1200ms;
+  -webkit-animation-duration: 1200ms;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    overflow: hidden;
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+/*  ANIMATION - Page blanche Loader */
+.LoaderStart {
+  animation: WhitePage 2s;
+}
+
+@keyframes WhitePage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*  BOUTONS - Map et Commander  */
+.btn {
+  color: #ffffff;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  transition: opacity 1s;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+/*  BOUTONS - checkbox like  */
+.checkbox-like {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  height: 25px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.checkbox-like.checkbox-like--position {
+  position: initial;
+  margin-top: 20px;
+}
+
+.checkbox-like input[type=checkbox]:checked ~ .unchecked {
+  display: none;
+}
+
+.checkbox-like input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+  color: #9356DC ;
+}
+
+.checkbox-like input[type=checkbox], .checkbox-like .checked {
+  display: none;
+  animation: like 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to bottom, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+  }
+}
+/*  BOUTONS - sélection plats  */
+.ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  margin: 20px 0 0 10px;
+}
+
+.title-sup {
+  font-weight: normal;
+}
+
+.prix {
+  padding: 38px 15px 0 15px;
+  font-weight: bold;
+}
+
+.btn-dish {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px gainsboro;
+  margin-top: 20px;
+  height: 70px;
+}
+
+.box {
+  overflow: hidden;
+  text-align: center;
+  background: #99E2D0;
+  width: 0;
+  align-items: center;
+  transition: width 1s;
+  padding-top: 25px;
+}
+
+.check {
+  display: inline-block;
+  margin: auto;
+  color: #fff;
+  font-size: 25px;
+  transform: rotate(360deg);
+  transition: transform 500ms;
+}
+
+.btn-dish:hover .box {
+  width: 70px;
+}
+
+.btn-dish:hover .box > .check {
+  transform: rotate(0deg);
+}
+
+/*  ANIMATION - Apparition boutons sélection  */
+.up {
+  animation: fadein 1s;
+}
+
+.up--1 {
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.up--2 {
+  animation-delay: 150ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.up--3 {
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.up--4 {
+  animation-delay: 450ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

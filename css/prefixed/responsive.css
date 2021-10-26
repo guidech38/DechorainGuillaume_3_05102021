@@ -1,0 +1,75 @@
+@media all and (min-width: 800px) {
+	
+	body {
+		width: auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+/*  SECTIONS ACCUEIL ET PAGES  */
+  
+	.process, .restaurants, .intro, .menupage {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+		-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
+	}
+
+/*  SECTION ACCUEIL  */
+  
+	.actions-list {
+	    width: 730px;
+	}
+
+	.menu {
+		width: 800px;
+	}
+
+/* SECTIONS PAGES  */
+  
+	.intro, .menupage {
+	    width: 834px;
+	}
+  
+	.container {
+		-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
+	}
+
+/*  BOUTONS DE SELECTION PLATS  */
+  
+	.btn-dish {
+	    width: 95%;
+	}
+  }
+
+  	.title-dish {
+		  width: 95%;
+	  }
+
+@media all and (max-width: 400px) {
+
+/*  SECTION MENUPAGE  */
+
+	.title-sup {
+	    font-size: 14px;
+	}
+  
+	.menupage {
+	    margin: 0px 10px 30px 10px;
+	}
+}
